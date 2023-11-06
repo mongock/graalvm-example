@@ -2,7 +2,7 @@
 
 ## Scope
 Mongock currently doesn't provide official support for Graalvm. Although it will be officially supported in the next major release, 
-there is an increased demand to have a solution in the short term.
+there is a clear(and increasing) demand to have a solution in the short term.
 
 This workaround tries to satisfies this need in the best manner possible.
 
@@ -16,6 +16,7 @@ This workaround tries to satisfies this need in the best manner possible.
     );
 ```
 2. The feature `ChangeUnitsRegistrationFeature`. You don't need to do anything, just be aware it exists as you will need it at the image's creation time
+3. `.setLockGuardEnabled(false)` in the builder.
 3. `.sdkmanrc` provided. If you are not using `sdkman`, please ensure you are using graalvm
 4. Ensure MongoDB is running
 
